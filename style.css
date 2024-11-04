@@ -118,19 +118,6 @@ section img#mountains_front {
   font-size: 1em;
   color: #fff;
 }
-.portfolio-item {
-  width: 30%;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 10px; /* Tambahkan padding untuk memberi ruang di dalam kotak proyek */
-}
-
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Memberikan jarak yang lebih merata antar item */
-  gap: 30px; /* Menambah jarak antar proyek secara horizontal */
-}
 
 .project-desc {
   text-align: justify;
@@ -155,4 +142,138 @@ section img#mountains_front {
 
 .contact-list a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .card {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content .card {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Tambahan untuk membuat portofolio lebih rapi */
+.portfolio-item {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #1c0522; /* Memberikan background agar terlihat lebih rapi */
+  border-radius: 10px; /* Membuat sudut item menjadi lebih halus */
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.project-desc {
+  text-align: justify; /* Mengatur teks agar rata kiri dan kanan */
+  font-size: 1rem;
+  color: #fff; /* Pastikan warna teks kontras dengan background */
+}
+
+/* Menyesuaikan tampilan portofolio pada layar yang lebih kecil */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 45%; /* Menyesuaikan ukuran item pada tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    width: 100%; /* Menyesuaikan ukuran item pada layar kecil */
+  }
+}
+
+/* Styling untuk bagian kontak agar lebih rapi */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #fff; /* Menjaga konsistensi warna dengan teks */
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem; /* Mengubah ukuran teks agar lebih besar dan jelas */
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-list a {
+    font-size: 1.1rem; /* Mengubah ukuran teks kontak pada tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-list a {
+    font-size: 1rem; /* Mengubah ukuran teks kontak pada layar kecil */
+  }
+
+  .contact-list i {
+    font-size: 1.5rem; /* Mengubah ukuran ikon pada layar kecil */
+  }
+}
+
+/* Menambahkan gaya untuk padding dan margin agar lebih rapi */
+.sec {
+  padding: 50px 20px;
+}
+
+.sec h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sec p {
+  font-size: 1rem;
+  line-height: 1.5; /* Menambah spasi antar baris teks untuk keterbacaan */
 }
